@@ -26,6 +26,5 @@ public class User {
     private String encordedPassword;
     @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
-    private List<Customer> customer;
-
+    private List<Customer> customers;
 }
