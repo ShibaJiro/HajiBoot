@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().formLogin().loginProcessingUrl("/login").loginPage("/loginForm")
                 .failureUrl("/loginForm?error").defaultSuccessUrl("/customers", true)
                 .usernameParameter("username").passwordParameter("password").and().logout()
-                .logoutSuccessUrl("loginForm");
+                .logoutSuccessUrl("/loginForm");
     }
 
     @Bean

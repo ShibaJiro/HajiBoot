@@ -23,7 +23,7 @@ public class User {
     @Id
     private String username;
     @JsonIgnore
-    private String encordedPassword;
+    private String encodedPassword;
     @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
     private List<Customer> customers;
